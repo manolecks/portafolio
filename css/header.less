@@ -1,0 +1,118 @@
+header{
+    padding: 23px;
+}
+.logo{
+    text-align: center;
+    @media @tablet{
+        text-align: left;
+    }
+    a{
+        .font(@fontRoboto,800,36px);
+        i{
+            color:@colorSecond;
+        }
+        span{
+            .font(@fontRoboto,300,36px);
+            color: @colorThird;
+        }
+    }
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media @tablet{
+        flex-direction: column;
+    }
+    @media @desktop{
+        flex-direction: row;
+    }
+    li{
+         padding: 0 12px;
+         /*margin-top: -12px;*/
+         height: 23px;
+
+        
+        a{
+            color: @colorBlanco;
+            line-height: 3.3em;
+            .font(@fontRoboto, 400,18px);
+            opacity: 0.8;
+            transition: all 0.9s;
+            letter-spacing: 1px;
+            &:hover{
+                color: @colorThird;
+            }
+        }
+    }
+}
+
+.toggle{
+    cursor: pointer;
+    font-size: 35px;
+    transition: all 0.9s;
+    display: none;
+    &::before{
+        content: "\f0c9";
+        .font-awesome;
+        
+    }
+    &:hover::before{
+        content: "\f057";
+
+    }
+}
+
+/**Area active*/
+.scrollYell.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+    flex-direction: row;
+    justify-content: center;
+    background: @colorNegro;
+    transition: all 0.5s;
+}
+
+.links__b.scrollYell.active{
+    padding: 15px 0;
+    top: 67px;
+    margin-top: inherit !important;
+    @media @desktop{
+        padding: initial !important;
+        width: 50%;
+        left: 0%;
+        top: 0;
+    }
+    & a{
+        
+        @media @desktop{
+            margin: 9px !important;
+        }
+    }
+    
+}
+.navigation.scrollYell.active{
+    top: 0px;
+    flex-direction: column;
+    padding-bottom: 32px;
+    
+    @media @desktop{
+        padding: initial !important;
+        width: 50%;
+        left: 50%;
+        flex-direction: row;
+        
+    }
+    & li{
+        @media @desktop{
+            margin-top: initial !important;
+            height: initial !important;
+        }
+    }
+    
+}

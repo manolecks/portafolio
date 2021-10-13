@@ -1,0 +1,25 @@
+.heading{
+    h3{
+        padding: 9px 0;
+        .font(@fontRoboto,400, 26px)
+    }
+    
+    span{
+        position: relative;
+        width: 50%;
+        height: 2px;
+        background: @colorBlanco;
+        display: block;
+        
+        &::before{
+            position: absolute;
+            content: "";
+            width: 25%;
+            height: 2px;
+            background: @colorMain;
+            top: 0;
+            left: 0;
+
+        }
+    }
+}

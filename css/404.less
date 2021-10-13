@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800;900&display=swap');
+
+:root{
+    --max-width: 980px;
+    --med-width: 768px;
+    --sm-width: 568px;
+    --small-width: 95%;
+    --font-main:'Poppins',sans-serif;
+    --font-size: 16px;
+
+}
+
+@desktop: ~"(min-width:var(--max-width))";
+@tablet: ~"(min-width:var(--med-width))";
+@small: ~"(min-width:var(--sm-width))";
+
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: var(--font-size);
+    font-family: var(--font-main);
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-flow: column;
+	width: 60%;
+		margin: 0 auto;
+	@media(max-width:450px){
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+.dl{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row;
+	text-align: left;
+	
+	@media(max-width:450px){
+		flex-direction: column;
+		text-align: center;
+	}
+	a{
+		margin-left: 12px;
+		position: relative;
+		text-decoration: none;
+		font-weight: 500;
+		color: #f0f;
+	}
+	
+}
+footer{
+	text-align: center;
+}
+.glitch {
+    text-decoration: none;
+	text-transform: uppercase;
+	margin: 0;
+	color: #fff;
+	letter-spacing: 5px;
+    cursor: pointer;
+    font-size: 7em;
+    text-align: center;
+	position: relative;
+	transition: all 0.4s;
+	line-height: 99px;
+	@media(max-width:450px){
+		font-size: 5em;
+	}
+	&:before, 
+    &:after {
+		display: block;
+		content: attr(data-glitch);
+		text-transform: uppercase;
+		position: absolute;
+		top: 0;
+		
+		height: 100%;
+		width: 100%;
+		opacity: .8;
+	} 
+    &:after {
+		color: #f0f;
+		z-index: -2;
+		left: -5px;
+		animation: glitch 0.9s;
+	}
+     &:before {
+		color: #0ff;
+		z-index: -1;
+		left: 5px;
+		animation: glitch 0.9s;
+	}
+	/*&:hover {
+		&:before {
+			animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 5
+		}
+		&:after {
+			animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both 5
+		}
+	}*/
+}
+
+
+@keyframes glitch {
+	0% {
+		left: -5px;
+	}
+	25% {
+		left: 0px;
+	}
+	50% {
+		left: 5px;
+	}
+	75% {
+		left: 0px;
+	}
+	100% {
+		left: -5px;
+	}
+	
+	
+}
+
+/*@keyframes glitch {
+	0% {
+		transform: translate(0)
+	}
+	20% {
+		transform: translate(-5px, 5px)
+	}
+	40% {
+		transform: translate(-5px, -5px)
+	}
+	60% {
+		transform: translate(5px, 5px)
+	}
+	80% {
+		transform: translate(5px, -5px)
+	}
+	to {
+		transform: translate(0)
+	}
+}*/
+
