@@ -1,0 +1,56 @@
+.overlay{
+    position: fixed;
+    background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilos overlay box*/
+.meStyle.overlay{
+    position: fixed;
+    background-image: radial-gradient(circle at 50% -20.71%, #ffe7d5 0, #ffe8d2 6.25%, #ffe9cf 12.5%, #ffebce 18.75%, #ffeccc 25%, #ffeecb 31.25%, #fcefcb 37.5%, #f7f1cc 43.75%, #f2f2cd 50%, #edf3cf 56.25%, #e7f5d1 62.5%, #e2f6d4 68.75%, #ddf7d7 75%, #d8f8db 81.25%, #d3f9df 87.5%, #cff9e3 93.75%, #cbfae8 100%);top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInScale 0.9s ease-in-out;
+    z-index: 3;
+    margin: 0;
+    overflow: hidden;
+    & .bx-content{
+        display: flex;
+        width: 65%;
+        background: white;
+        padding: 23px 18px;
+        box-shadow: 0px 3px 8px -3px  rgba(0,0,0,0.35);
+        .img{
+            width: 600px;
+            img{
+                position: relative;
+            }
+        }
+        .text{
+            padding: 8px;
+        }
+    }
+    .box{
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+        overflow: hidden;
+        position:relative;
+        cursor: pointer;
+        margin-top: 45px;
+    }
+}
+
+
+
+                      
