@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::Landing KFC::</title>
+    <link rel="stylesheet/less" href="less/kfc.less">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
+    <script src="https://kit.fontawesome.com/2fa7808a9e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="content--">
+    <header>
+        <div class="row middle-xs around-md">
+            <div class="col-xs-6">
+<h1><a href="#" class="logo"><span>KFC Landing</span><img src="img/logo.svg"/></a></h1>
+            </div>
+            <div class="col-xs-6">
+                <div class="toggleNav"></div>
+                <ul class="navegation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Más promociones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="content--text">
+                    <h2 class="title title--a">Es <span>delicioso...</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dicta accusantium dignissimos voluptatibus consectetur architecto provident at impedit molestiae aspernatur, nesciunt modi? Autem corporis animi facilis molestiae eius illo deserunt.</p>
+                    <a href="#">Ordenar ahora</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="slider">
+                    <div class="slides active">
+                        <img src="img/burger.png" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="img/burger_fries.png" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="img/french_fries.png" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="img/fried_chicken.png" alt="">
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+            <div class="col-xs-12">
+                <div class="row middle-md">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="redes">
+                            <ul>
+                                <li><a href="#"><span>facebook</span> <i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><span>twitter</span><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><span>instagram</span><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 first-xs last-md col-md-6">
+                        <div class="text--f">
+                            <p>---Siempre fresco</p>
+                        </div>
+                        <div class="nav-img">
+                            <ul>
+                                <li class="prev"><i class="fa fa-arrow-left"></i></li>
+                                <li class="next"><i class="fa fa-arrow-right"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                  
+                    
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+</div>
+    <script>
+        let links = document.querySelectorAll('a');
+        const slides = document.querySelectorAll('.slides');
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+        const toggleNav = document.querySelector('.toggleNav');
+        let navi = document.querySelector('.navegation')
+
+        i=0;
+        function activeSlides(n){
+            for(slide of slides)
+            slide.classList.remove('active');
+            slides[n].classList.add('active');
+        }
+
+        //btn
+
+        next.addEventListener('click', function(){
+            if(i == slides.length - 1){
+                i = 0;
+                activeSlides(i);
+
+            }
+            else{
+                i++;
+                activeSlides(i);
+            }
+        })
+
+        prev.addEventListener('click', function(){
+            if(i == 0){
+                i = slides.length - 1;
+                activeSlides(i);
+
+            }
+            else{
+                i--;
+                activeSlides(i);
+            }
+        })
+
+        links.forEach((ele)=>{
+            ele.addEventListener('click', (e)=>{
+            e.preventDefault();
+        })
+        })
+        
+
+  toggleNav.addEventListener('click', ()=>{
+    navi.classList.toggle('active');
+    toggleNav.classList.toggle('active');
+  })
+
+    </script>
+</body>
+</html>

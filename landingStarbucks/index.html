@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::Landing Starbucks::</title>
+    <link rel="stylesheet/less" href="less/starbucks.less">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
+    <script src="https://kit.fontawesome.com/2fa7808a9e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="content--">
+    <header>
+        <div class="row middle-xs around-md">
+            <div class="col-xs-6">
+<h1><a href="#" class="logo"><span>Starbucks Landing</span><img src="img/logo.png"/></a></h1>
+            </div>
+            <div class="col-xs-6">
+                <div class="toggleNav"></div>
+                <ul class="navegation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Más promociones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <div class="content--text">
+                    <h2 class="title title--a">Es <span>delicioso...</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dicta accusantium dignissimos voluptatibus consectetur architecto provident at impedit molestiae aspernatur, nesciunt modi? Autem corporis animi facilis molestiae eius illo deserunt.</p>
+                    <a href="#">Ordenar ahora</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="slider">
+                    <div class="slides active" data-name="Frappe Menta">
+                        <img src="img/img1.png" alt="">
+                    </div>
+                    <div class="slides" data-name="Frappe Strawberry">
+                        <img src="img/img2.png" alt="">
+                    </div>
+                    <div class="slides" data-name="Frappe Raspberry">
+                        <img src="img/img3.png" alt="">
+                    </div>
+                    <div id="circle" class="circle" style="background: red;"></div>
+                   
+                </div>
+                
+                
+            </div>
+            <div class="col-xs-12">
+                <div class="row center-md">
+                    
+                    <div class="col-xs-12 first-xs last-md col-md-6">
+                        <div class="text--f">
+                            <p>---Siempre fresco</p>
+                        </div>
+                        <div class="nav-img">
+                            <ul>
+                                <li class="prev"><i class="fa fa-arrow-left"></i></li>
+                                <li class="next"><i class="fa fa-arrow-right"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                  
+                    
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+   
+</div>
+ <!--START REDES-->
+ <div class="redes">
+    <ul>
+        <li><a href="#"><span>facebook</span> <i class="fa fa-facebook-f"></i></a></li>
+        <li><a href="#"><span>twitter</span><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><span>instagram</span><i class="fa fa-instagram"></i></a></li>
+    </ul>
+</div>
+<!--END REDES-->
+
+    <script>
+        let links = document.querySelectorAll('a');
+        let slides = document.querySelectorAll('.slides');
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+        const toggleNav = document.querySelector('.toggleNav');
+        let navi = document.querySelector('.navegation');
+        const circle = document.getElementById('circle');
+        let textF = document.querySelector('.text--f p');
+
+        i=0;
+
+        let backd = ['#335c32','#ed7a99','#fbcad9'];
+
+        textF.innerHTML = slides[0].dataset.name;
+        circle.style.background = `${backd[0]}`;
+        console.log(circle.style.background);
+        function activeSlides(n){
+            for(slide of slides)
+            slide.classList.remove('active');
+            slides[n].classList.add('active');
+            circle.style.background = `${backd[n]}`;
+            textF.innerHTML = slides[n].dataset.name;
+        }
+
+        //btn
+
+        next.addEventListener('click', function(){
+            if(i == slides.length - 1){
+                i = 0;
+                activeSlides(i);
+               
+
+            }
+            else{
+                i++;
+                activeSlides(i);
+               
+            }
+        })
+
+        prev.addEventListener('click', function(){
+            if(i == 0){
+                i = slides.length - 1;
+                activeSlides(i);
+                
+                
+            }
+            else{
+                i--;
+                activeSlides(i);
+                
+            }
+        })
+
+        links.forEach((ele)=>{
+            ele.addEventListener('click', (e)=>{
+            e.preventDefault();
+        })
+        })
+        
+
+  toggleNav.addEventListener('click', ()=>{
+    navi.classList.toggle('active');
+    toggleNav.classList.toggle('active');
+  })
+
+
+
+
+    </script>
+</body>
+</html>

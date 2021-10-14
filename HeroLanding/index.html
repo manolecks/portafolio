@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Landings</title>
+    <link rel="stylesheet" href="pscroll.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Hero</a>
+            <div class="toggle" onclick="toogleMenu();">
+            </div>
+            <ul class="navigation">
+                <li><a href="#" style="--i:1;">Home</a></li>
+                <li><a href="#" style="--i:2;">Characteres</a></li>
+                <li><a href="#" style="--i:3;">Movies</a></li>
+                <li><a href="#" style="--i:4;">Games</a></li>
+                <li><a href="#" style="--i:5;">More</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="box" style="--i:3;">
+                <div class="imgBx">
+                    <img src="img/responsive/img1.jpg" alt="">
+                </div>
+            </div>
+            <div class="box" style="--i:4;">
+                <div class="imgBx">
+                    <img src="img/responsive/img2.jpg" alt="">
+                </div>
+            </div>
+            <div class="box" style="--i:5;">
+                <div class="imgBx">
+                    <img src="img/responsive/img3.jpg" alt="">
+                </div>
+            </div>
+            <div class="box" style="--i:6;">
+                <div class="imgBx">
+                    <img src="img/responsive/img4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <ul class="sci">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+
+            </ul>
+            <p class="copyrightText">&copy Manolecks 2021</p>
+        </div>
+    </section>
+    <script>
+        let imgBx = document.querySelectorAll('.imgBx');
+        imgBx.forEach(popup => popup.addEventListener('click', function() {
+            popup.classList.toggle('active')
+        }))
+
+        function toogleMenu() {
+            const menutoggle = document.querySelector('.toggle');
+            const navi = document.querySelector('.navigation');
+            menutoggle.classList.toggle('active');
+            navi.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

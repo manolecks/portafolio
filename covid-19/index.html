@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::Estadistica COVID::</title>
+    <link rel="stylesheet/less" href="css/style.less">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
+    <script src="https://kit.fontawesome.com/2fa7808a9e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="content">
+                <h1 class="logo"><a href="#">covid-19</a></h1>
+
+                <!-- <div class="navToggle"></div>
+                <ul class="navigation">
+                    <li><a href="https://levementeverde.com">lv</a></li>
+                    <li><a href="https://levementeverde.com/">cv</a></li>
+                    <li><a href="">contacto</a></li>
+                </ul>
+            </div>-->
+            </div>
+    </header>
+    <section class="banner">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="content">
+                <div class="box">
+
+                    <div class="infoBx deathsBx">
+
+                        <div class="info__bg bg__dead">
+                            <i class="info__icon fas fa-skull-crossbones "></i>
+                            <h3 class="info__title">Muertos</h3>
+                        </div>
+
+                        <div class="info__bg bg__ctn__dead">
+
+                            <p id="deaths" class="info__numero" data-cantidad-total="">1200</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box active">
+                    <div class="infoBx confirmBx">
+                        <div class="info__bg bg__confirm">
+                            <i class="info__icon fas fa-hand-middle-finger"></i>
+                            <h3 class="info__title">Curados</h3>
+                        </div>
+                        <div class="info__bg bg__ctn__confirm">
+
+                            <p id="recovered" class="info__numero" data-cantidad-total="">1200</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="infoBx recupBx">
+                        <div class="info__bg bg__recup">
+                            <i class="info__icon fas fa-check-circle"></i>
+                            <h3 class="info__title">Dudosos</h3>
+                        </div>
+                        <div class="info__bg bg__ctn__recup">
+
+                            <p id="active" class="info__numero" data-cantidad-total="">1200</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <footer>
+            <div class="container">
+                <div class="content">
+                    <p><span>Todos los derechos reservados &copy <a href="https://levementeverde.com" target="_blank">LV</a> </span><span id="fecha"></span><span>Los datos son <a href="https://covid19api.com/" target="_blank">covid19api</a></span></p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- <div class="info__bg bg__footer__recup">
+                            <p class="info__texto">Última modificación</p>
+                            <p class="info__fecha">23/04/2020</p>
+                        </div>-->
+
+
+
+    <script src="js/covid.js"></script>
+
+</body>
+
+</html>

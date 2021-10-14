@@ -1,0 +1,105 @@
+.pop__up{
+    position: relative;
+    display: none;
+    z-index: 4;
+    &::before{
+        content:"";
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.4);
+        top: 0;
+        left: 0;
+       
+    }
+    .pop__up--close{
+        position: absolute;
+        top: -12px;
+        right: -18px;
+        background: black;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        cursor: pointer;
+        z-index: 1;
+
+        p{
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+    .pop__up--content{
+        position: fixed;
+        width: 600px;
+        height: 450px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 3px;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.23);
+        background: #c9ab81;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       /* flex-direction: column;*/
+        
+       @media(max-width:468px){
+           width: 80%;
+           height: 35%;
+       }
+        .pop__up--content_left{
+            position: relative;
+            width: 97.8%;
+            height: 97.8%;
+            padding: 23px;
+            /*border-radius: 12px;*/
+            overflow: hidden;
+            
+        }
+        .pop__up--content_left img{
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+           
+        }
+        .pop__up--content_right{
+            padding: 20px;
+            h2{
+                font-size: 30px;
+                letter-spacing: 1px;
+            }
+            p{
+                line-height: 20px;
+
+            }
+            a{
+                background: tomato;
+                color: white;
+                padding: 12px 18px;
+                letter-spacing: 1px;
+                border-radius: 6px;
+                display: block;
+                width: 30%;
+                text-decoration: none;
+                text-align: center;
+                margin: 0 auto;
+                border:1px solid transparent;
+                transition: all 1.2s;
+                &:hover{
+                    border: 1px solid tomato;
+                    background: transparent;
+                    color: tomato;
+
+                }
+            }
+        }
+        
+    }
+}
