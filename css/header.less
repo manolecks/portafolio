@@ -1,5 +1,6 @@
 header{
     padding: 23px;
+    margin-top: 30px;
 }
 .logo{
     text-align: center;
@@ -128,4 +129,30 @@ header{
 }
 .emailFalse::after{
     content: "j.manuelolvera@gmail.com";
+}
+
+
+.topLangs{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+    background: @colorSecond;
+    padding: 6px;
+    button{
+        background: transparent;
+        border: 1px solid @colorNegro2;
+        padding: 8px 6px;
+        color: @colorNegro;
+        cursor: pointer;
+        margin: 0 5px;
+        transition: all 0.9s;
+        &:hover{
+            opacity: 0.5;
+        }
+        
+    }
 }

@@ -1,0 +1,30 @@
+{
+    "es":{
+        "name":"<span>Hola, soy</span> Juan Olvera",
+        "profesion": "Diseñador gráfico / web",
+        "textIntro": "Cuento con más de 8 años de experiencia en el diseño gráfico, comencé en medios tradicionales(serigrafía, imprenta digital, impresión gran formato) haciendo diseños para diferentes tipos de clientes desde el un logo hasta una activación y la evolución de la tecnología me hizo entrar en el mundo de digital específicamente en desarrollo web y publicidad digital como son los banner estáticos y animados. Soy un equilibrista.",
+        "sentence":"Que tal Te muestro un poco de mis trabajos realizados. <i class='fa fa-beer'></i> Salud y libertad <i class='fas fa-cannabis'></i>",
+        "works":"Últimos proyectos <span class='linea'></span>",
+        "filter1":"Todos",
+        "filter2":"Web",
+        "filter3":"Logotipos",
+        "filter4":"Ilustración",
+        "filter5":"Experimentos",
+        "footer":"Todos los derechos reservados by Manolecks"
+    },
+    "en":{
+        "name":"<span>Hello, I´m </span> Juan Olvera",
+        "profesion": "Grafic designer & web",
+        "textIntro": "I have more than 8 years of experience in graphic design, I started in traditional media (screen printing, digital printing, large format printing) making designs for different types of clients from a logo to an activation and the evolution of technology made me enter in the world of digital specifically in web development and digital advertising such as static and animated banners. I am a tightrope walker.",
+        "sentence":"How about I show you a little of my work done. <i class='fa fa-beer'></i> Cheers and freedom <i class='fas fa-cannabis'></i>",
+        "works":"lastest works <span class='linea'></span>",
+        "filter1":"All",
+        "filter2":"Webs",
+        "filter3":"Logos",
+        "filter4":"Illustration",
+        "filter5":"Experiments",
+        "footer":"All rights reserved by Manolecks"
+
+    }
+    
+}
