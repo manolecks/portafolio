@@ -5,22 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>::CV juan manuel olvera mendoza 2021::</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet/less" href="less/style.less">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
     <script src="https://kit.fontawesome.com/2fa7808a9e.js" crossorigin="anonymous"></script>
+   
 </head>
 <body>
- <div class="container__cv">
+ <div class="container__cv type--B">
      <div class="side__left">
-         <div class="side__left--img">
-             <img src="https://drive.google.com/uc?export=view&id=1aClwQuCgUVtLRQSQ3tI4yP2isWUCuX8U" alt="">
-
-
+         <div class="wrap--Name">
+            <div class="side__left--img">
+                <img src="https://drive.google.com/uc?export=view&id=1aClwQuCgUVtLRQSQ3tI4yP2isWUCuX8U" alt="">
+            </div>
+            <div class="side__left--name">
+                <h1>Juan Manuel <br/> <span>Olvera Mendoza</span></h1>
+                <p>Diseñador gráfico / web  </p>
+            </div>
          </div>
-         <div class="side__left--name">
-             <h1>Juan Manuel <br/> <span>Olvera Mendoza</span></h1>
-             <p>Diseñador gráfico / web  </p>
-         </div>
-         <!--<div class="side__left--divider"></div>-->
+        
+         <div class="wrap--contacto"></div>
          <div class="side__left--contact">
              <div class="title__section">
                  <h2>Contáctame</h2>
@@ -132,17 +135,19 @@
 
 const progess = document.querySelectorAll('.blt');
 const skillsM = document.querySelectorAll('.skills--se');
-progess.forEach((ele) => {
-    console.log(ele, ele.getAttribute('data-done'));
+/*progess.forEach((ele) => {
     ele.style.width = 0;
     setTimeout(() => {
-        ele.style.width = ele.getAttribute('data-done') + '%';
+        ele.style.width = ele.dataset.w + '%';
     }, 2000)
 
-})
+})*/
 
 skillsM.forEach((ele)=>{
-    ele.style.width = ele.getAttribute('data-w') + "%";
+    setTimeout(() => {
+        ele.style.width = ele.dataset.w + '%';
+    }, 2000)
+    
 })
 </script>
 </body>

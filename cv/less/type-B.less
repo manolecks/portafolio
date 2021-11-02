@@ -1,0 +1,141 @@
+body{
+    background: url('../bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: opacity(60%) blur(12px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.container__cv.type--B{
+    width: var(--sizePageTypeB);
+    height: auto;
+    margin: 0 auto;
+    /*border: 1px solid white;*/
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 5px 8px 0px rgba(0,0,0,0.25);
+    border-top:6px solid var(--color-a);
+    @media @tablet{
+        margin: 25px auto;
+        width: var(--sizePagePrintH);
+    }
+
+}
+
+
+.type--B{
+    .title__section{
+        h2{
+            font-size: 1.32em;
+            letter-spacing: 2px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background: var(--color-a);
+                display: block;
+                bottom: -3px;
+            }
+        }
+    }
+    .wrap--Name{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .side__left--img{
+            margin: inherit;
+        }
+        .side__left--name{
+            text-align: left;
+            h1{
+                font-size: 1.5em;
+            }
+            p{
+                font-style: italic;
+            }
+        }
+    }
+    .side__left--contact{
+        .list__items{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: left;
+            li{
+                text-align: left;
+                color: var(--color-e);
+            }
+        }
+    }
+    .side__left--study{
+        .list__items{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: left;
+            li{
+                text-align: left;
+            }
+        }
+    }
+    .side__left--studyContinue{
+        .list__items{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: left;
+            li{
+                text-align: left;
+            }
+        }
+    }
+    .side__left--lenguages{
+        .list__items{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: left;
+            li{
+                text-align: left;
+            }
+        }
+    }
+
+    .side__right{
+        .side__right--about{
+            .block__text{
+                color: var(--color-c);
+            }
+        }
+        .side__right--skills{
+            .list__items.skills--list{
+                .skills--se{
+                    width: 0;
+                    transform-origin: left;
+                    animation: fill  9s forwards;
+                }
+            }
+        }
+    }
+} 
+
+
+@keyframes fill {
+    0% {
+      opacity: 1;
+      transform: scaleX(0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  }
+
