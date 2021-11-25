@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@400;500;900&display=swap');
+
+/*Fonts*/
+@fontRoboto: 'Open Sans', sans-serif;
+@fontSize: 14px;
+.font(@font:'arial',@wight:400,@fsize:@fontSize){
+    font-family: @font;
+    font-weight: @wight;
+    font-size: @fsize;
+}
+/*ICONOS FONTAWESOME*/
+.font-awesome(@weight:900){
+    font-family: "Font Awesome 5 Free";
+    font-weight: @weight;
+}
+/*Medias queries*/
+@lg:~"(min-width:1024px)";
+@desktop: ~"(min-width:980px)";
+@tablet: ~"(min-width:768px)";
+@small: ~"(min-width:568px)";
+@phone: ~"(min-width:320px)";

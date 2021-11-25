@@ -1,0 +1,43 @@
+.heading{
+    h2{
+        .font-sizesFont(@font-black,2em,300);
+        color: red;
+        text-align: center;
+    }
+}
+
+.text__{
+    background: red;
+    h2{
+        .font-sizesFont(@font-lekton, 1.8em,200);
+    }
+    p{
+        .font-sizesFont(@font-open, 14px,100);
+        line-height: 18px;
+    }
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    .banner__img{
+        background: url(../../img/fondos/lluvia.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .text__banner{
+        background: red;
+        z-index: 1;
+        h1{
+            .font-sizesFont(@font-ave,2.3em, 300)
+        }
+    }
+}
+

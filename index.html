@@ -6,60 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos</title>
+    <link rel="icon" type="image/png" href="https://drive.google.com/uc?export=view&id=19P8OqL7phrKL_Ek0jJtEXpffPfYwVPKv" />
     <link rel="stylesheet/less" href="css/index.less">
     <link rel="stylesheet" href="css/grid-bootstrap/bootstrap-grid.min.css">
-    <link rel="stylesheet/less" href="css/index.less">
+    <link rel="stylesheet/less" href="css/index-v2.less">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
     <script src="https://kit.fontawesome.com/2fa7808a9e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!--<header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 d-sm-flex p-3 heder">
-                    <h1 class="item__bl">Manolecks</h1>
-                    <ul class="item__bl">
-                        <li><a href="https://manolecks.000webhostapp.com/cv-2/cv.html" class="active__false__btn" target="_blank">cv HTML</a> <a href="https://manolecks.000webhostapp.com/pdf/cv-juan-manuel-olvera2021.pdf" class="active__false__btn" target="_blank">cv PDF</a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=5552525865&text=Hola,%20hagamos%20equipo" target="_blank">55-5252-5865</a></li>
-                        <li><a href="mailto:j.manuelolvera@gmail.com">j.manuelolvera@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </header>-->
-     <!--<header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 d-sm-flex p-3 heder">
-                    <h1 class="item__bl">Manolecks</h1>
-                    <ul class="item__bl">
-                        <li><a href="https://manolecks.000webhostapp.com/cv-2/cv.html" class="active__false__btn" target="_blank">Ver cv</a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=5552525865&text=Hola,%20hagamos%20equipo" target="_blank">55-5252-5865</a></li>
-                        <li><a href="mailto:j.manuelolvera@gmail.com">j.manuelolvera@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </header>-->
+    <div class="topLangs">
+        <button class="translate" id="es">Español</button>
+    <button class="translate" id="en">Inglés</button>
+    </div>
     <header>
         <div class="container">
             <div class="row d-flex align-items-md-center align-items-lg-start">
                 <div class="col-lg-6 col-md-6 col-sm-6">
-                    <h1 class="logo"><a href="#"><i class="fa fa-connectdevelop"></i>Juan <span>Olvera</span></a></h1>
+                    <h1 class="logo"><a href="#"><i class="fa fa-connectdevelop"></i><!--Juan <span>Olvera</span>--></a></h1>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="toggle"></div>
                     <ul class="navigation scrollYell">
-                        <!--<li><a href="about" title="Acerca de mi">Acerca de mi</a></li>
-                        <li><a href="#resumen" title="Resumen">Resumen</a></li>
-                        <li><a href="#portafolio" title="Portafolio">Portafolio</a></li>
-                        <li><a href="#contacto" title="Resumen">Contactame</a></li>
-                       <li><a href="https://manolecks.000webhostapp.com/cv-2/cv.html" class="active__false__btn" target="_blank">cv HTML</a> <a href="https://manolecks.000webhostapp.com/pdf/cv-juan-manuel-olvera2021.pdf" class="active__false__btn" target="_blank">cv PDF</a></li>-->
                         <li><a href="https://api.whatsapp.com/send?phone=5552525865&text=Hola,%20hagamos%20equipo" target="_blank">55-5252-5865</a></li>
-                        <li><a href="mailto:j.manuelolvera@gmail.com">j.manuelolvera@gmail.com</a></li>
+                        <li><span class="emailFalse"></span></li>
                     </ul>
                 </div>
             </div>
@@ -69,31 +39,30 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-md-10">
+                <div class="col-md-12">
                     <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                         <div class="hero__text">
-                            <h2><span>Hola, soy</span>
+                            <h2 class="lang" key="name"><span>Hola, soy</span>
                               Juan Olvera
                             </h2>
                             
-                            <p class="ser">Diseñador gráfico / web</p>
-                            <p>Que tal Te muestro un poco de mis trabajos realizados  saludos.</p>
-                            <p class="slog"><i class="fa fa-beer"></i> Salud y libertad <i class="fas fa-cannabis"></i></p>
+                            <p key="profesion" class="ser lang">Diseñador gráfico / web</p>
+                            <p  class="lang" key="textIntro">Cuento con más de 8 años de experiencia en el diseño gráfico, comencé en medios tradicionales(serigrafía, imprenta digital, impresión gran formato) haciendo diseños para diferentes tipos de clientes desde el un logo hasta una activación y la evolución de la tecnología me hizo entrar en el mundo de digital específicamente en desarrollo web y publicidad digital como son los banner estáticos y animados. Soy un equilibrista. </p>
+                            <p class="lang" key="sentence">Que tal Te muestro un poco de mis trabajos realizados. <i class="fa fa-beer"></i> Salud y libertad <i class="fas fa-cannabis"></i></p>
+                            
                             <div class="links__b scrollYell">
-                               <!--<a href="#contacto">Contacta me</a>
-                                <a href="https://manolecks.000webhostapp.com/pdf/">Descargar</a>-->
-                                <a href="https://manolecks.000webhostapp.com/cv-2/cv.html" class="active__false__btn" target="_blank">cv HTML</a> <a href="https://manolecks.000webhostapp.com/pdf/cv-juan-manuel-olvera2021.pdf" class="active__false__btn" target="_blank">cv PDF</a>
+                                <a href="cv/" class="active__false__btn" target="_blank">cv HTML</a> <a download href="https://drive.google.com/uc?export=view&id=1mNAJSe_RKnHZcbMLKeoo1Jwxj8N9CLI7" class="active__false__btn" target="_blank">cv PDF</a>
                             </div>
                             
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <div class="hero__img">
-                            <img src="img/manolecks-doble.jpg" alt="">
-                            <img src="img/pertubador.jpg" alt="">
-                            <img src="img/mks-back.jpg" alt="">
-                            <img src="img/juanolvera.jpg" alt="">
+                            <img src="https://drive.google.com/uc?export=view&id=1sJbyOsM5pakopyJPcxCQoYr7fWYDXmhw" alt="">
+                            <img src="https://drive.google.com/uc?export=view&id=1vKeoextWWIINpw0rj5I6uifFLgWYaSxO" alt="">
+                            <img src="https://drive.google.com/uc?export=view&id=19P8OqL7phrKL_Ek0jJtEXpffPfYwVPKv" alt="">
+                            <img src="https://drive.google.com/uc?export=view&id=1aClwQuCgUVtLRQSQ3tI4yP2isWUCuX8U" alt="">
                         </div>
                     </div>
                 </div>
@@ -102,40 +71,24 @@
             </div>
         </div>
     </div>
-    <!--<div class="title__cabecera">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="heading">
-                        <h2>Bienvenidos te muestro mi portafolio<span class="linea"></span></h2>
-                        <div class="pre__texto">
-                            <p>Te muestro un poco de mis trabajos realizados en los últimos 4 meses saludos.</p>
-                            <p class="slog"><i class="fa fa-beer"></i> Salud y libertad <i class="fas fa-cannabis"></i></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
     <div class="last__works">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 top-m">
                     <div class="heading color-a">
-                        <h2>Últimos proyectos<span class="linea"></span></h2>
+                        <h2 class="lang" key="works">Últimos proyectos<span class="linea"></span></h2>
                     </div>
                 </div>
                 
                 <div class="col-md-6">
                     <div class="box__last__works">
                         <div class="box__img">
-                            <img src="img/diamcsa.png" alt="">
+                            <img src="https://drive.google.com/uc?export=view&id=1LwHGRZbbab-wqcla2bgXPeJtOPqro1uo" alt="">
                         </div>
                         <div class="box__text">
                             <div class="box__text__into">
-                                <p>Cliente: <span>Dimacsa</span></p>
+                                <p><span class="lang" key="worksT">Cliente:</span><span>Dimacsa</span></p>
                                 <p>Descripción: <span>Página web,maquetación HTML,CSS y JS.</span></p>
-                                <!--<p>Ciudad:<span>Cancún,Quintana Roo</span></p>-->
                                 <a href="http://dimacsa.mx" target="_blank">Ir a ver sitio</a>
                             </div>
                             
@@ -146,15 +99,14 @@
                 <div class="col-md-6">
                     <div class="box__last__works">
                         <div class="box__img">
-                            <img src="img/plurmac.png" alt="">
+                            <img src="https://drive.google.com/uc?export=view&id=1i72frc22ei6glntE1gVBv8LhZTdpwvmS" alt="">
                         </div>
 
                         <div class="box__text">
                             <div class="box__text__into">
-                                <p>Cliente: <span>Plurmac</span></p>
-                                <p>Descripción: <span>Página web, adaptación template sobre wordpress.</span></p>
-                               <!-- <p>Ciudad:<span>Cancún,Quintana Roo</span></p>-->
-                                <a href="http://plurmac.com/" target="_blank">Ir a ver sitio</a>
+                                <p>Cliente: <span>Novedades</span></p>
+                                <p>Descripción: <span>Logos y animaciones de banners</span></p>
+                                <a href="novedades-banners-animados/" target="_blank">Ir a ver sitio</a>
                             </div>
                     </div>
                 </div>
@@ -167,13 +119,11 @@
                 <div class="col-md-12">
                     <div class="filter__portafolio">
                         <ul>
-                            <li class="list active" data-filter="all">Todos</li>
-                            <li class="list" data-filter="web">Web</li>
-                            <li class="list" data-filter="logos">Logotipos</li>
-                            <li class="list" data-filter="illustration">Ilustración</li>
-                            <li class="list" data-filter="experiment">Experimentos</li>
-                            <!-- <li class="list" data-filter="gifs">gifs</li>-->
-
+                            <li class="list active lang" key="filter1" data-filter="all">Todos</li>
+                            <li class="list lang" key="filter2" data-filter="web">Web</li>
+                            <li class="list lang" key="filter3" data-filter="logos">Logotipos</li>
+                            <li class="list lang" key="filter4" data-filter="illustration">Ilustración</li>
+                            <li class="list lang" key="filter5" data-filter="experiment">Experimentos</li>
                         </ul>
                     </div>
                 </div>
@@ -182,9 +132,22 @@
 
         <div class="container">
             <div id="portafolioCards" class="portafolio__cards">
-                
+
+
                 <div class="itemBox" data-item="web">
-                    <a href="/banners-animados/" target="_blank" title="card"> <img src="img/publicidad/bestday.jpg" alt=" ">
+                    <a href="http://plurmac.com/" target="_blank" title="card"> <img src="https://drive.google.com/uc?export=view&id=1av73IDBeXNOPDRcogkqrf8NEdALDCDDJ" alt=" ">
+                    </a>
+                    <div class="info__card">
+                        <h3>Banners Animados</h3>
+                        <div class="btn__info__card">
+                            <a href="#"><i class="fas fa-anchor"></i><span>Link del sitio</span></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="itemBox" data-item="web">
+                    <a href="banners-animados/" target="_blank" title="card"> <img src="https://drive.google.com/uc?export=view&id=1DCsWG-wrx-IaPU0N4VMon2nAEZrpCSIB" alt=" ">
 
                     </a>
                     <div class="info__card">
@@ -197,32 +160,32 @@
                 <div class="itemBox sin__img line__rosas" data-item="web">
                     <a href="landingStarbucks/" target="_blank" title="Starbucks">
                         <!--Libres de pensamiento-->
-                        <img src="img/starbucks.jpg" alt="">
+                        <img src="https://drive.google.com/uc?export=view&id=1D8nTDvpmZpJkvYgLbL_znTgXutgSkab7" alt="">
                     </a>
                 </div>
 
                 <div class="itemBox sin__img line__rosas" data-item="web">
                     <a href="landingKFC/" target="_blank" title="KFC">
                         <!--Libres de pensamiento-->
-                        <img src="img/kfc.jpg" alt="">
+                        <img src="https://drive.google.com/uc?export=view&id=14om67D7WBaOnENng-XbRWizqqVzgaIgi" alt="">
                     </a>
                 </div>
 
 
-                <div class="itemBox sin__img line__rosas videoX" data-src-video="video/video-abcedario.mp4" data-item="experiment">
-                    <img src="img/abcd.jpg" alt="">
+                <div class="itemBox sin__img line__rosas videoX" data-src-video="https://drive.google.com/uc?export=view&id=1JKRQlVdqY4jrYGtQoLo_IVH-HxfKrOHP" data-item="experiment">
+                    <img src="https://drive.google.com/uc?export=view&id=1G4jZ22fYB5k0dPUDNm7DLD5FGztqzKbP" alt="">
                    <!-- <p>El abecedario</p>-->
                     <!--<a href="lideresDeFe/" title="anarquia"></a>-->
                 </div>
-                <div class="itemBox sin__img line__rosas videoX" data-src-video="video/video-mota.mp4" data-item="experiment">
-                    <img src="img/lamota.jpg" alt="">
+                <div class="itemBox sin__img line__rosas videoX" data-src-video="https://drive.google.com/uc?export=view&id=1VmhGW-pJ6hOoTLQisprzoHGGj_z0fwU1" data-item="experiment">
+                    <img src="https://drive.google.com/uc?export=view&id=1amJjBke3lw7bj71gMCxMqSOE_ntm21nL" alt="">
                    <!--<p>M.O.T.A</p>--> 
                     <!--<a href="lideresDeFe/" title="anarquia"></a>-->
                 </div>
                 <div class="itemBox sin__img line__rosas" data-item="web">
-                    <a href="MenuRestaurante/menu2/" target="_blank" title="anarquia">
+                    <a href="MenuRestaurante/menu1/" target="_blank" title="anarquia">
                         <!--Libres de pensamiento-->
-                        <img src="img/restaurante/restaurante-img.jpg" alt="">
+                        <img src="https://drive.google.com/uc?export=view&id=1w9CfPBsdAaI3OLjmdp2gekBlRS8arQMH" alt="">
                     </a>
                 </div>
                 <div class="itemBox sin__img line__rosas" data-item="web">
@@ -231,23 +194,23 @@
                 <div class="itemBox sin__img line__rosas" data-item="web">
                     <a href="404.html" target="_blank" title="Error 404 no se encontro la pagina">Error 404</a>
                 </div>
-                <div class="itemBox sin__img line__amarillo" data-item="web">
+                <!--<div class="itemBox sin__img line__amarillo" data-item="web">
                     <a href="landingCiudades/" target="_blank" title="Cards Azules">Ciudades</a>
-                </div>
-                <div class="itemBox sin__img line__azul" data-item="web">
+                </div>-->
+               <!-- <div class="itemBox sin__img line__azul" data-item="web">
                     <a href="cards-azules/" target="_blank" title="Cards Azules">Cards Azules</a>
-                </div>
-                <div class="itemBox sin__img line__azul" data-item="web">
+                </div>-->
+                <!--<div class="itemBox sin__img line__azul" data-item="web">
                     <a href="cards-animados-azul/" target="_blank" title="Cards Azules">Cards Azules</a>
-                </div>
+                </div>-->
                 <div class="itemBox sin__img line__rosas" data-item="web">
                     <a href="card-girls-rosas/" target="_blank" title="Cards Rosas">Cards Rosas</a>
                 </div>
                 <div class="itemBox sin__img line__azul" data-item="web">
-                    <a href="/covid-19/" target="_blank" title="Covid web app">web Covid</a>
+                    <a href="covid-19/" target="_blank" title="Covid web app">web Covid</a>
                 </div>
                 <div class="itemBox expand" data-item="Ilustración">
-                    <img src="img/gifs/gusanoSmall.gif" alt=" ">
+                    <img src="https://drive.google.com/uc?export=view&id=11aQ0dS2OB89PKdn9lVj6FspeJJyh7STi" alt=" ">
                     <div class="info__card">
                         <h3>Animación de logo</h3>
                         <div class="btn__info__card">
@@ -257,65 +220,66 @@
                 </div>
 
                 <div class="itemBox expand" data-item="illustration">
-                    <img src="img/gifs/cuboinstagram.gif " alt=" ">
+                    <img src="https://drive.google.com/uc?export=view&id=18imO-yg-ggKI7BFEa5YjBY5QXo86xRFu" alt=" ">
                 </div>
 
                 <div class="itemBox" data-item="web">
-                    <a href="card-nike-morado/" target="_blank" title="card"> <img src="img/web/card-morado.jpg " alt=" "></a>
+                    <a href="card-nike-morado/" target="_blank" title="card"> <img src="https://drive.google.com/uc?export=view&id=1Ov8UC_auuSYfPHoZ-46obkh3HmzCjXBF" alt=" "></a>
                 </div>
 
                 <div class="itemBox" data-item="web ">
                     <a href="card-nike-negro/" target="_blank" title="card">
-                        <img src="img/web/card-black.jpg " alt=" ">
+                        <img src="https://drive.google.com/uc?export=view&id=16DKg_uX4b_ACrSAI_rcTwnDKEfzKdd0Z" alt=" ">
                     </a>
                 </div>
                 <div class="itemBox" data-item="web ">
-                    <a href="/google/" target="_blank" title="card">
-                        <img src="img/web/google.jpg " alt=" ">
+                    <a href="google/" target="_blank" title="card">
+                        <img src="https://drive.google.com/uc?export=view&id=1ZOv22UjKot2iMErJB0ERo_91FdzQZhhI" alt=" ">
                     </a>
                 </div>
-                <div class="itemBox" data-item="web ">
-                    <a href="/paper/" target="_blank" title="card">
-                        <img src="img/web/paper.jpg " alt=" ">
+               <!-- <div class="itemBox" data-item="web ">
+                    <a href="paper/" target="_blank" title="card">
+                        <img src="https://drive.google.com/uc?export=view&id=1ubLvt2JbyCo-y308-PBqKJySlEWs4qge" alt=" ">
                     </a>
+                </div>-->
+                <div class="itemBox expand" data-item="illustration">
+                    <img src="https://drive.google.com/uc?export=view&id=1dnfSthTtnYtQfZyJ58mYRi-doTG7fkiq" alt=" ">
                 </div>
                 <div class="itemBox expand" data-item="illustration">
-                    <img src="img/gifs/rostrosinstagram.gif" alt=" ">
-                </div>
-                <div class="itemBox expand" data-item="illustration">
-                    <img src="img/gifs/4fYd09wrSEAdMjL7AI.gif" alt=" ">
+                    <img src="https://drive.google.com/uc?export=view&id=1n52icipza4OlrQckGewUzmomA5r-N7mr" alt=" ">
                 </div>
                 <div class="itemBox" data-item="web">
                     <a href="/HeroLanding/" target="_blank " title="page landing ">
-                        <img src="img/web/hero.jpg " alt=" ">
+                        <img src="https://drive.google.com/uc?export=view&id=14-0DNKrU19qkvhcnE8PykBZEj4RT6nAw" alt=" ">
                     </a>
                 </div>
-                <div class="itemBox" data-item="illustration ">
-                    <img src="img/ilustraciones/manolecks.jpg " alt=" ">
+                <div class="itemBox expand" data-item="illustration ">
+                    <img src="https://drive.google.com/uc?export=view&id=1hkrnL8ba_y4CN-WrNtQf3lj6MhnRVcTG" alt=" ">
                 </div>
 
-                <div class="itemBox expand " data-item="illustration ">
+               <!-- <div class="itemBox expand " data-item="illustration ">
                     <img src="img/ilustraciones/monito.png " alt=" ">
-                </div>
+                </div>-->
 
-                <div class="itemBox expand " data-item="logos">
+                <!--<div class="itemBox expand " data-item="logos">
                     <img src="img/logos/logo-xipe-movil.png " alt=" ">
-                </div>
+                </div>-->
                 <div class="itemBox expand " data-item="logos">
-                    <img src="img/publicidad/SantanderESPECIALESPush.jpg " alt=" ">
+                    <img src="https://drive.google.com/uc?export=view&id=1K06lWhGaa5h7hModGN3F8V0308GpZ60a" alt=" ">
                 </div>
 
-                <div class="itemBox expand " data-item="logos">
+               <!-- <div class="itemBox expand " data-item="logos">
                     <img src="img/logos/logos-capital-h.jpg " alt=" ">
-                </div>
+                </div>-->
             </div>
         </div>
+    </div>
     </div>
     <footer>
         <div class="container ">
             <div class="row ">
                 <div class="col-md-12 ">
-                    <p>Todos los derechos reservados by monelecks <span id="fecha"></span> </p>
+                    <p class="lang" key="footer">Todos los derechos reservados by monelecks <span id="fecha"></span> </p>
                 </div>
             </div>
         </div>
@@ -324,7 +288,7 @@
     <div id="ctnBOX" class="container__img">
         <div class="container ">
             <div class="content ">
-                <img id="bigSmallImg" src="img/ilustraciones/pertubador.jpg " alt=" ">
+                <img id="bigSmallImg" src="https://drive.google.com/uc?export=view&id=1K06lWhGaa5h7hModGN3F8V0308GpZ60a" alt=" ">
             </div>
         </div>
     </div>
@@ -332,14 +296,102 @@
         <div class="container ">
             <div class="content ">
                 <video id="bigVideo" controls>
-                    <source src="video/video-mota.mp4" type="video/mp4">
+                    <source src="https://drive.google.com/file/d/1VmhGW-pJ6hOoTLQisprzoHGGj_z0fwU1/view?usp=sharing" type="video/mp4">
                 </video>
             </div>
         </div>
     </div>
+    <!--cOMIENZA LA PROMO DE TEMPORADA-->
+    <div id="promo" class="promo">
+        <!--COMIENZA EL CODIGO DE HTML-->
+        <div class="card">
+            <div class="container">
+                <div class="row flex-column-reverse flex-md-row">
+                    <div class="col-md-6 col-sm-12 hide">
+                        <div class="bx-text">
+                            <div class="bx-title">
+                                <h1><i><img src="https://drive.google.com/uc?export=view&id=1hX5QTsNAglkLDT8ntzibuG0vcuDaK93z" alt=""></i>Día de Muertos<i><img src="https://drive.google.com/uc?export=view&id=1hX5QTsNAglkLDT8ntzibuG0vcuDaK93z" alt=""></i></h1>
+                            </div>
+                            <div class="bx-paragrah">
+                                <p class="special"><i><img src="https://drive.google.com/uc?export=view&id=1Z4ixnAMd1hDzLnWzDSlumN5Tq5NdORbp" alt=""></i>
+                                    una celebración a la memoria y un ritual que privilegia el recuerdo sobre el olvido.
+                                    <i><img src="https://drive.google.com/uc?export=view&id=1Z4ixnAMd1hDzLnWzDSlumN5Tq5NdORbp" alt=""></i>
+                                </p>
+    <p>
+    En la época prehispánica el culto a la muerte era uno de los elementos básicos de la cultura, cuando alguien moría era enterrado envuelto en un petate y sus familiares organizaban una fiesta con el fin de guiarlo en su recorrido al Mictlán. De igual forma le colocaban comida que le agradaba en vida, con la creencia de que podría llegar a sentir hambre.
+    </p>
+    
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+    
+                        <div class="bx-content">
+                            <div class="bx-marc">
+                                <img src="https://drive.google.com/uc?export=view&id=1fDj2vTXMLYi1wkpqGV0-O6D9udkc51Pt" alt="">
+                            </div>
+                            <div class="bx-img">
+                                <img src="https://drive.google.com/uc?export=view&id=1t0gOrESUvyxW2EHIti012iBOzuZFbV8S" alt="">
+                                <img src="https://drive.google.com/uc?export=view&id=1w46b6qMTwDhe_yBaJ7etZVwJAqhhQTj_" alt="">
+                                <img src="https://drive.google.com/uc?export=view&id=100FjpMwKSQDx-gmc_FEoez5bnHKuX8Mu" alt="">
+                                
+                
+                            </div>
+                            <div class="bx-text text-img">
+                            <div class="bx-title">
+                                <h1><i><img src="https://drive.google.com/uc?export=view&id=1hX5QTsNAglkLDT8ntzibuG0vcuDaK93z" alt=""></i>Día de Muertos<i><img src="https://drive.google.com/uc?export=view&id=1hX5QTsNAglkLDT8ntzibuG0vcuDaK93z" alt=""></i></h1>
+                            </div>   
+                        </div>
 
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <!--TERMINA EL CODIGO DE HTML-->
+    </div>
+    <!--TERMINA LA PROMO DE TEMPORADA-->
     <script src="app.js "></script>
+    <script src="langs.js"></script>
+
+
     <script>
+        function tiempo(tiempo){
+	    var timeDecof =  new Date(tiempo).getTime() - new Date().getTime();
+			return timeDecof;
+        }
+        
+        let promoFecha = ["Oct 29, 2021 00:00:00","Nov 03, 2021 12:00:00"],
+            promoStart = tiempo(promoFecha[0]) < 0,
+            promoEnd = tiempo(promoFecha[1]) > 0;
+        let promo = document.getElementById('promo');
+          
+        console.log(promoFecha, promoStart, promoEnd, tiempo)
+
+  if(promoEnd & promoStart){
+        window.addEventListener('load', ()=>{
+            setTimeout(()=>{
+            document.body.style.overflow = "hidden";
+            promo.classList.add('active');
+            },2500)
+            
+        });
+
+        window.addEventListener('click',()=>{
+            document.body.style.overflow = "initial";
+            promo.classList.remove('active');
+        })
+
+        console.log('Sin terminar fecha');
+
+    }
+    else{
+        console.log('termino la fecha')
+    }
+
         let hlang = document.querySelector('html')
         hlang.lang = "es-Mx"
         console.log(hlang)

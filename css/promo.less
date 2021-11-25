@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+:root{
+    --color-main : rgb(255, 145, 0);
+    --font-size: 14px;
+    --fontFamily : 'Libre Baskerville', serif;
+    --midnight: hsla(303, 95%, 22%, 1);
+    --yellow-pantone: hsla(53, 100%, 54%, 1);
+    --rose-bonbon: hsla(329, 100%, 59%, 1);
+    --tufts-blue: hsla(210, 59%, 57%, 1);
+    --orange: hsla(30, 100%, 50%, 1);
+    --black: hsla(0,0,0,0);
+}
+.promo{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
+    animation: fadeInScale 0.5s ease-in-out;
+    background: red;
+    background:url('https://drive.google.com/uc?export=view&id=1tUjFz5BxMhgXA_m6HlqtAcc53TQaGpxG');
+    backdrop-filter: blur(3px) opacity(0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &.active{
+        display: flex;
+    }
+    .bx-text{
+        background: rgba(255,255,255,1);
+        padding: 30px 44px;
+        i{
+            width: 25px;
+            height: 25px;
+            position: relative;
+            display: inline-block;
+            img{
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+            }
+        }
+    }
+    .bx-text{
+        .bx-title{
+            color: var(--orange);
+            font-size: 1.5em;
+            font-family: var(--fontFamily);
+            text-align: center;
+        }
+        .bx-paragrah{
+            font-family: var(--fontFamily);
+            text-align: left;
+            color: black;
+            p{
+                padding: 9px 0;
+                line-height: 30px;
+            }
+        }
+    }
+   
+    .special{
+        font-style: italic;
+        text-align: center;
+    }
+    .card{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        .bx-content{
+            position: relative;
+            width: 350px;
+            box-shadow: 3px 6px 4px 3px rgba(0, 0, 0, 0.5);
+            margin: 0 auto;
+            .bx-marc{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background: red;
+                z-index: 1;
+                img{
+                    width: 425px;
+                    position: absolute;
+                    top: -16px;
+                    left: -40px;
+                    object-fit: cover;
+                }
+            }
+            .bx-img{
+                position: relative;
+                height: 469px;
+                overflow: hidden;
+                background: url('https://drive.google.com/uc?export=view&id=1IHgKSCQU0RA014YNLFRuRZWTbesBwQkO');
+                background-repeat: no-repeat;
+                background-size: cover;
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    object-fit: cover;
+                    width: 100%;
+                    animation-name: cf4FadeInOut;
+                    animation-timing-function: ease-in-out;
+                    animation-iteration-count: infinite;
+                    animation-duration: 24s;
+                    &:nth-of-type(1) {
+                        animation-delay: 16s;
+                    }
+                    &:nth-of-type(2) {
+                        animation-delay: 8s;
+                    }
+                    &:nth-of-type(3) {
+                        animation-delay: 0s;
+                    }
+                }
+            
+            }
+
+        }
+    }
+
+}
+
+.text-img{
+    background: rgba(255,255,255,0.5) !important;
+    backdrop-filter: blur(9px);
+    display: block;
+    @media @tablet{
+        display: none;
+    }
+    .bx-title{
+        font-size: 13px !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+}
+.hide{
+    display: none;
+    @media @tablet{
+        display: block;
+    }
+
+}
+
+@keyframes fadeInScale {
+    0% { transform: scale(0.6); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }

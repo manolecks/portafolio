@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ads Structuc</title>
+    <style>
+        /*#1f539d azul
+          #e2272f rojo
+        */
+        
+         :root {
+            --color-azul: #1f539d;
+            --color-rojo: #e2272f;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: url('img/path1.png') repeat, #333;
+        }
+        
+        section {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: inherit;
+            margin-top: 45px;
+            flex-direction: row;
+        }
+        
+        section .boxAds {
+            width: 250px;
+            height: 250px;
+            display: block;
+            margin: 0 12px;
+        }
+        
+        section .boxAds .content {
+            color: white;
+        }
+        
+        section .boxAds .content h2 {
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-size: 18px;
+        }
+        
+        section .boxAds .content p {
+            font-weight: 100;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+        
+        section .boxAds iframe {
+            border: none;
+            scroll-behavior: unset;
+        }
+        
+        section .ads160 {
+            width: 160px;
+            height: 600px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            background: rgba(255, 255, 255, 0.03);
+        }
+        
+        section .ads250 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            background: rgba(255, 255, 255, 0.03);
+        }
+        
+        section .ads300 {
+            width: 300px;
+            height: 600px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            background: rgba(255, 255, 255, 0.03);
+        }
+        
+        section .ads250 iframe {
+            width: 250px;
+            height: 250px;
+        }
+        
+        section .ads160 iframe {
+            width: 160px;
+            height: 600px;
+        }
+        
+        section .ads300 iframe {
+            width: 300px;
+            height: 600px;
+        }
+        
+        @media(max-width:500px) {
+            section {
+                flex-direction: column;
+                align-items: center;
+            }
+            section .boxAds {
+                margin: 35px 0;
+            }
+        }
+        
+        .img-wrapper {
+            position: relative;
+            width: 100%;
+        }
+        
+        .img-wrapper .container-img {
+            width: 95%;
+            margin: 0 auto;
+            padding: 43px 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container-img .imgBx {
+            position: relative;
+            width: 300px;
+            height: auto;
+            margin: 12px 12px;
+        }
+        
+        .container-img .imgBx img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+        }
+        
+        .imgBx.cuadrado {
+            width: 290px;
+            height: 300px;
+        }
+        
+        .imgBx.rectagular {
+            width: 30%;
+            height: 500px;
+        }
+        
+        .imgBx.rectagular img {
+            object-fit: contain;
+        }
+        
+        .imgBx.horizontal {
+            width: 100%;
+            height: 300px;
+        }
+        
+        .imgBx.horizontal img {
+            object-fit: contain;
+        }
+        
+        .text {
+            width: 95%;
+            display: block;
+            padding: 23px 0;
+            margin: 0 auto;
+        }
+        
+        .text .heading {
+            text-align: center;
+        }
+        
+        .heading h2 {
+            font-size: 30px;
+            color: white;
+            letter-spacing: 1px;
+        }
+        
+        .heading span {
+            width: 300px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.03);
+            overflow: hidden;
+            border-radius: 6px;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .heading span::before {
+            content: "";
+            width: 50%;
+            height: 2px;
+            background: white;
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        @media(max-width:768px) {
+            .img-wrapper .container-img {
+                justify-content: center;
+            }
+            .imgBx.cuadrado {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <div class="heading">
+            <h2>BESTDAY</h2>
+            <span></span>
+        </div>
+    </div>
+    <section class="img-wrapper">
+        <div class="container-img">
+
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-1.jpg" alt="">
+            </div>
+
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-3.jpg" alt="">
+            </div>
+
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-6.jpg" alt="">
+            </div>
+
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-7.jpg" alt="">
+            </div>
+
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-8.jpg" alt="">
+            </div>
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-13.jpg" alt="">
+            </div>
+
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-14.jpg" alt="">
+            </div>
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-11.jpg" alt="">
+            </div>
+
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-10.jpg" alt="">
+            </div>
+
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-12.jpg" alt="">
+            </div>
+
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-19.jpg" alt="">
+            </div>
+
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-20.jpg" alt="">
+            </div>
+
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-21.jpg" alt="">
+            </div>
+
+
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-15.jpg" alt="">
+            </div>
+
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-16.jpg" alt="">
+            </div>
+
+            <div class="imgBx cuadrado">
+                <img src="../img/nuevoporta/bestday-17.jpg" alt="">
+            </div>
+
+
+
+            <div class="imgBx horizontal">
+                <img src="../img/nuevoporta/bestday-9.jpg" alt="">
+            </div>
+
+            <div class="imgBx horizontal">
+                <img src="../img/nuevoporta/bestday-5.jpg" alt="">
+            </div>
+
+            <div class="imgBx horizontal">
+                <img src="../img/nuevoporta/bestday-4.jpg" alt="">
+            </div>
+
+            <div class="imgBx rectagular">
+                <img src="../img/nuevoporta/bestday-18.jpg" alt="">
+            </div>
+
+            <div class="imgBx rectagular">
+                <img src="../img/nuevoporta/bestday-2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="boxAds ads250">
+            <iframe src="banners/ads250/index.html" frameborder="0"></iframe>
+            <div class="content">
+                <h2>Bestday 250</h2>
+                <p>Medias 250X250 / Realizado GWD</p>
+            </div>
+        </div>
+
+        <div class="boxAds ads160">
+            <iframe src="banners/ads160/index.html" frameborder="0"></iframe>
+            <div class="content">
+                <h2>Bestday 250</h2>
+                <p>Medias 250X250 / Realizado GWD</p>
+            </div>
+        </div>
+
+        <div class="boxAds ads300">
+            <iframe src="banners/ads300/index.html" frameborder="0"></iframe>
+            <div class="content">
+                <h2>Bestday 250</h2>
+                <p>Medias 250X250 / Realizado GWD</p>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

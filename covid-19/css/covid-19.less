@@ -1,0 +1,192 @@
+
+/* Small devices (landscape phones, 576px and up) 
+@media (min-width: 576px) {}
+ Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint 
+@media (min-width: 768px) {}
+
+ Large devices (desktops, 992px and up)
+@media (min-width: 992px){}
+
+Extra large devices (large desktops, 1200px and up) 
+@media (min-width: 1200px) {}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto&display=swap" rel="stylesheet">
+*/
+@import 'bootstrap-grid.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
+@import 'https://fonts.googleapis.com/css?family=Anton|Roboto&display=swap';
+
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+}
+header{
+    text-align: center;
+    background: black;
+    color: white;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    @media (min-width: 768px) {
+        position: relative;
+        z-index: unset;
+    }
+
+    
+}
+
+.card__bl {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    @media (min-width: 576px) {
+        flex-wrap: wrap-reverse;
+        width: 95%;
+        margin: 100px auto;
+       
+    }
+    @media (min-width: 768px) {
+        margin: 0 auto;
+       
+    }
+
+
+}
+
+.card__covid {
+    background: white;
+    border: 2px solid;
+    margin: 15px auto;
+    border-radius: 8px;
+    transition: 0.5s linear;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    width: 100%;
+    @media (min-width: 576px) {
+        //width: 25%;
+    }
+    @media (min-width: 768px) {
+        //width: 50%;
+    }
+}
+
+.card__covid:hover {
+    box-shadow: 0px 7px 10px 1px rgba(0, 0, 0, 0.5);
+    transform: rotate(-10deg);
+}
+
+.card__covid.confirm:hover {
+    box-shadow: 0px 7px 10px 1px rgba(238, 16, 16, 0.5);
+    transform: rotate(-10deg);
+    background-color: white;
+    color: red;
+    border-color: red;
+}
+
+.card__covid.recovered:hover {
+    box-shadow: 0px 7px 10px 1px rgba(82, 191, 22, 0.5);
+    transform: rotate(-10deg);
+    background-color: white;
+    color: #52bf16;
+    border-color: #52bf16;
+    ;
+}
+
+.card__covid.deaths:hover {
+    box-shadow: 0px 7px 10px 1px rgba(82, 191, 22, 0.5);
+    transform: rotate(-10deg);
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.card__covid.sospect:hover {
+    box-shadow: 0px 7px 10px 1px rgba(82, 191, 22, 0.5);
+    transform: rotate(-10deg);
+    background-color: white;
+    color: #f4b30b;
+    border-color: #f4b30b;
+}
+
+.card__covid.confirm {
+    background: red;
+    color: white;
+}
+
+.card__covid.recovered {
+    background: #52bf16;
+    color: white;
+}
+
+.card__covid.deaths {
+    background: black;
+    color: white;
+}
+
+.card__covid.sospect {
+    background: #f4b30b;
+    color: white;
+}
+
+.displease {
+    transform: scale(1.1);
+}
+
+.card__info {
+    padding: 12px;
+    text-align: center;
+    /*transform: translateY(40%);*/
+}
+
+.info__icon {
+    font-size: 34px;
+}
+
+.info__title {
+    font-size: 20px;
+    margin: 0;
+    @media (min-width: 576px) {
+        font-size: 25px;
+    }
+
+}
+
+.info__numero {
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+}
+
+.info__texto {
+    margin: 0;
+}
+
+.info__fecha {
+    margin: 0;
+}
+
+footer{
+    text-align: center;
+    .link__levemente{
+        color: green;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+    a{
+        text-decoration: none;
+    }
+}

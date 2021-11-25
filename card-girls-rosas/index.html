@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::CARD OVERLAY::</title>
+    <link rel="stylesheet" href="libs/css/bootstrap-grid.min.css">
+    <link rel="stylesheet/less" href="less/style.less">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
+</head>
+<body>
+   
+    <section class="boxs">
+        <div class="bx-g">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4 col-sm-6 d-flex justify-content-center meStyle">
+                        <div class="box box-2"><!--Card star-->
+                            <div class="img__box">
+                                <img src="img/1.jpg" alt="">
+                            </div>
+                            <div class="details__box">
+                                <div class="type">
+                                    <a href="#">Rabbed Cardigan</a>
+                                    <span>Noe Arrival</span>
+                                </div>
+                                <a href="#" class="price">$100</a>
+                            </div>
+                        </div> <!--Card end-->
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 d-flex justify-content-center meStyle">
+                        <div class="box box-2"><!--Card star-->
+                            <div class="img__box">
+                                <img src="img/2.jpg" alt="">
+                            </div>
+                            <div class="details__box">
+                                <div class="type">
+                                    <a href="#">Rabbed Cardigan</a>
+                                    <span>Noe Arrival</span>
+                                </div>
+                                <a href="#" class="price">$100</a>
+                            </div>
+                        </div> <!--Card end-->
+                    </div>
+                    
+                    
+                    <div class="col-md-4 col-sm-6 d-flex justify-content-center meStyle">
+                        <div class="box box-2"><!--Card star-->
+                            <div class="img__box">
+                                <img src="img/3.jpg" alt="">
+                            </div>
+                            <div class="details__box">
+                                <div class="type">
+                                    <a href="#">Rabbed Cardigan</a>
+                                    <span>Noe Arrival</span>
+                                </div>
+                                <a href="#" class="price">$100</a>
+                            </div>
+                        </div> <!--Card end-->
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 d-flex justify-content-center meStyle">
+                        <div class="box box-2"><!--Card star-->
+                            <div class="img__box">
+                                <img src="img/4.jpg" alt="">
+                            </div>
+                            <div class="details__box">
+                                <div class="type">
+                                    <a href="#">Rabbed Cardigan</a>
+                                    <span>Noe Arrival</span>
+                                </div>
+                                <a href="#" class="price">$100</a>
+                            </div>
+                        </div> <!--Card end-->
+                    </div>
+                    
+                    
+                    <div class="col-md-4 col-sm-6 d-flex justify-content-center meStyle">
+                    
+                    <div class="box box-2"><!--Card star-->
+                        <div class="img__box">
+                            <img src="img/5.jpg" alt="">
+                        </div>
+                        <div class="details__box">
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>Noe Arrival</span>
+                            </div>
+                            <a href="#" class="price">$100</a>
+                        </div>
+                    </div> <!--Card end-->
+                    
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 d-flex justify-content-center meStyle">
+                    
+                    <div class="box box-2"><!--Card star-->
+                        <div class="img__box">
+                            <img src="img/6.jpg" alt="">
+                        </div>
+                        <div class="details__box">
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>Noe Arrival</span>
+                            </div>
+                            <a href="#" class="price">$100</a>
+                        </div>
+                    </div> <!--Card end-->
+                    
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+ <!-- <div id="overlay" class="overlay overlay-a">
+        <div class="h">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Muestra de overlay</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nihil ea magnam accusantium rem. Soluta ducimus, molestiae, minima assumenda, placeat tenetur laboriosam qui ratione sapiente labore non? Quos, atque tenetur!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    
+
+     <!--<section>
+        <div class="g">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Modales</h1>
+                        <a href="#" class="" id="btn-modal">Modal activo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+
+
+
+    <script>
+        let boxs = document.querySelectorAll('.meStyle');
+        let bod = document.querySelector('body');
+        
+        
+        boxs.forEach((ele) =>{
+            console.log(ele)
+            ele.addEventListener('click', ()=>{
+                ele.classList.toggle('overlay');
+                console.log(ele)
+              bod.classList.toggle('overlayBody');
+            })
+        })
+    </script>
+</body>
+</html>

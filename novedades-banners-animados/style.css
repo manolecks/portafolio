@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@100;300;400;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-lora: 'Lora', serif;
+    --font-roboto: 'Roboto', sans-serif;
+}
+body{
+    font-family: var(--font-roboto);
+}
+
+header{
+    background: rgb(206, 206, 206);
+    padding: 23px;
+}
+.content-box{
+    margin-top: 55px;
+}
+
+.card-box{
+    height: 350px;
+    position: relative;
+}
+
+.card-box img{
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+
+}
+.card-box.m-1080-1920{
+    height: 600px;
+}
+.card-box.m-1080-1080{
+    height: 400px;
+}
+.card-box.m-336-280{
+    height: 120px;
+}
+
+.card-box.m-728-90 {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+width: 100%;
+flex-wrap: wrap;
+}
+.card-box.m-728-90 img{
+    margin-top: 10px;
+    position: relative;
+}

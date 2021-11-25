@@ -1,5 +1,6 @@
 header{
     padding: 23px;
+    margin-top: 30px;
 }
 .logo{
     text-align: center;
@@ -115,4 +116,43 @@ header{
         }
     }
     
+}
+.emailFalse{
+    color: #fff;
+    line-height: 3.3em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.8;
+    transition: all 0.9s;
+    letter-spacing: 1px;
+}
+.emailFalse::after{
+    content: "j.manuelolvera@gmail.com";
+}
+
+
+.topLangs{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+    background: @colorSecond;
+    padding: 6px;
+    button{
+        background: transparent;
+        border: 1px solid @colorNegro2;
+        padding: 8px 6px;
+        color: @colorNegro;
+        cursor: pointer;
+        margin: 0 5px;
+        transition: all 0.9s;
+        &:hover{
+            opacity: 0.5;
+        }
+        
+    }
 }
