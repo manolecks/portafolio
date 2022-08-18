@@ -1,0 +1,29 @@
+{
+    "Cards":[
+        {
+            "Corp":[
+                {
+                    "id":0,
+                    "nameCorp":"Levemente verde",
+                    "imgLog":"",
+                    "Colaboradores":[
+                        {
+                            "name":"Juan Olvera",
+                            "profession":"Diseñador web",
+                            "country":"Cancun",
+                            "state" : "Quintana Roo",
+                            "email": "manolecks@gmail.com",
+                            "address": "oriente 23, lote 34, mz. 345, c.p. 12309",
+                            "siteWeb" : "www.levemente-verde.com.mx"
+                        }
+                    ]
+                }
+            ]
+        }      
+    ]
+}
+
+
+
+
+
