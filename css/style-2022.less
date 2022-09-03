@@ -121,13 +121,20 @@ body{
 .d-info{
     ul{
         list-style: none;
-        display: flex;
+       
         justify-content: inherit;
         flex-direction: column;
         text-align: center;
+        display: none;
         @media @small {
             justify-content: space-evenly;
             flex-direction: row;
+            display: block;
+
+        }
+        @media @tablet {
+            
+            display: flex;
 
         }
         li{
@@ -404,4 +411,23 @@ footer{
        
     }
    
+  }
+
+  .showdato{
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 65%;
+    padding: 14px 0;
+
+    @media @small{
+        display: none;
+    }
+    p{
+        background: #ffd700;
+        color: #0057b8;
+        padding: 8px;
+        text-align: center;
+        font-size: .8em;
+    }
   }

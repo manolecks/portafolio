@@ -51,7 +51,9 @@
                  </div>
                     
                  </div>
-     
+                  <div class="showdato">
+                    <p>Ver info de contacto</p>
+                  </div>
                  <div class="d-info">
                      <ul>
                          <li>
@@ -201,7 +203,20 @@ let y = f.getFullYear();//Año acutal
 let old = 1985;// año de nacimineto 
 let yOld = y - old;//Restamos año actual con año de nacimiento
 oldYear.innerHTML = `${yOld} años`; // Colocamos el final de la  resta en la variable que necesitamos
-newYear.innerHTML = `${y}`
+newYear.innerHTML = `${y}`;
+
+let showDato = document.querySelector('.showdato');
+let dato = document.querySelector('.d-info ul');
+
+showDato.addEventListener("click", ()=>{
+      if(dato.style.display === "block"){
+        dato.style = "display: none"
+      }else{
+        dato.style = "display: block"
+      }
+      
+})
+   
 </script>
 </body>
 </html>
