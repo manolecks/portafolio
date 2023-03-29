@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper-grid{
+            display: grid;
+            min-height: 100vh;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(5, auto);
+        }
+        .wrapper-grid > *{
+            background: gray;
+            border: 1px solid black;
+        }
+
+        .header, .footer, .nav, .mcontent,.locontent{
+            grid-row: span 1;
+            grid-column: span 6;
+        }
+
+        .lcontent{
+            grid-row: 3/ 3;
+            grid-column: span 2;
+        }
+        .ccontent{
+            grid-row: 3 / 3;
+            grid-column: span 2;
+            
+        }
+        .rcontent{
+            grid-row: 3/ 3;
+            grid-column: span 2;
+           
+        }
+
+        @media  screen and (min-width: 768px) {
+            
+        .header{
+            grid-row: span 1;
+            grid-column: span 6;
+           
+        }
+        .nav{
+            grid-row: 2 / 5;
+            grid-column: 1/ 2;
+        }
+        .lcontent{
+            grid-row: 2/ 3;
+            grid-column: 2/3;
+        }
+        .ccontent{
+            grid-row: 2 / 3;
+            grid-column:span 3;
+            
+        }
+        .rcontent{
+            grid-row: 2/ 3;
+            grid-column: span 1 ;
+           
+        }
+       
+        .mcontent{
+            grid-row: 3 / 4;
+            grid-column: span 5;
+        }
+        .locontent{
+            grid-row: 4 / 5;
+            grid-column: span 5;
+        }
+        .footer{
+            grid-row: 5 / 6;
+            grid-column:  span 6;
+           
+        }
+        }
+        
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper-grid">
+            <header class="header"><h2>Header</h2></header>
+            <nav class="nav"><h2>nav</h2></nav>
+            <article class="lcontent"><h2>left content</h2></article>
+            <article class="ccontent"><h2>center content</h2></article>
+            <article class="rcontent"><h2>right content</h2></article>
+            <article class="mcontent"><h2>middle content</h2></article>
+            <article class="locontent"><h2>lower content</h2></article>
+            <footer class="footer"><h2>Footer</h2></footer>
+        </div>
+    </div>
+</body>
+</html>

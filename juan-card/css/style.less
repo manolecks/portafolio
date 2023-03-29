@@ -1,0 +1,81 @@
+/*ICONOS FONTAWESOME*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.font-awesome(@weight:900){
+    font-family: "Font Awesome 5 Free";
+    font-weight: @weight;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Merriweather:wght@400;900&family=Press+Start+2P&display=swap');
+@Inconsolata:'Inconsolata', monospace;
+@merry : 'Merriweather', serif;
+@press: 'Press Start 2P', cursive;
+
+.fontStyle(@fontfamily:@merry, @fontsize: 16px){
+    font-family: @fontfamily;
+    font-size: @fontsize;
+
+}
+
+body{
+    .fontStyle(@Inconsolata);
+    background: #EEEEEE;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.blo{
+    width: 300px;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    padding: 12px 8px;
+    background: white;
+}
+.imagenYop{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    background: url('https://drive.google.com/uc?export=view&id=13QDukwpghFZSmDOU7vNyUnRtm9slm5T4');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 12px auto;
+    border-radius: 50%;
+    box-shadow: 2px 3px 8px 1px rgba(0,0,0,0.3);
+}
+
+.img-qr{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 6px solid red;
+}
+
+.iconos-links{
+    list-style: none;
+    display: grid;
+    /*grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);*/
+    padding: 18px 0;
+    li{
+        text-align: center;
+        font-size: 1.4em;
+        position: relative;
+        background: black;
+        margin: 6px 0;
+        a{
+            color: red;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 8px;
+            &:hover{
+                color: purple;
+            }
+        }
+    }
+}

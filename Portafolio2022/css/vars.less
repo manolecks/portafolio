@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@100;300;400;700;900&display=swap');
+
+/*Fonts*/
+@fontLora: 'Lora', serif;
+@fontRoboto: 'Roboto', sans-serif;
+@fontSize: 14px;
+@font-base:'Consolas';
+.font(@font:'arial',@wight:400,@fsize:@fontSize){
+    font-family: @font;
+    font-weight: @wight;
+    font-size: @fsize;
+}
+/*ICONOS FONTAWESOME*/
+.font-awesome(@weight:900){
+    font-family: "Font Awesome 5 Free";
+    font-weight: @weight;
+}
+/*Colores*/
+@colorNegro: #222;
+@colorNegro2: #333;
+@colorBlanco:#fff;
+@colorMain:#6EC44F;
+@colorSecond:#d7fad4;
+@colorThird:#99f5bc;
+
+/*Medias queries*/
+@lg:~"(min-width:1024px)";
+@desktop: ~"(min-width:980px)";
+@tablet: ~"(min-width:768px)";
+@small: ~"(min-width:568px)";
+@phone: ~"(min-width:320px)";

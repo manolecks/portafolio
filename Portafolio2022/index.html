@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:Manolecks Portafolio:</title>
+    <link rel="icon" type="image/png" href="https://drive.google.com/uc?export=view&id=19P8OqL7phrKL_Ek0jJtEXpffPfYwVPKv" />
+    <!--<link rel="stylesheet" href="css/grid-bootstrap/bootstrap-grid.min.css">-->
+    <link rel="stylesheet/less" href="css/style-2022.less">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
+    <script src="https://kit.fontawesome.com/2fa7808a9e.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-28PVE0M0Z2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-28PVE0M0Z2');
+    </script>
+</head>
+<body>
+   <section class="container-section">
+        <div class="grid">
+            <div class="grid-col grid-col--1"></div>
+            <div class="grid-col grid-col--2"></div>
+            <div class="grid-col grid-col--3"></div>
+            <div class="grid-col grid-col--4"></div>
+
+
+            <div class="grid-item card card-w-t card-w-l">
+                <img src="https://drive.google.com/uc?export=view&id=1LwHGRZbbab-wqcla2bgXPeJtOPqro1uo" alt="">
+              
+               <a href="http://dimacsa.mx/papeleria" target="_blank">
+                   <p>Dimacsa</p>
+           </a>
+           </div>
+           
+            <div class="grid-item card card-w-t card-w-l">
+                <img src="https://drive.google.com/uc?export=view&id=1EdvZZPh9-hYwWIBQWIR9NSKcGkrfaTku" alt="">
+              
+               <a href="https://drive.google.com/file/d/1EZ-gKHUHvb0e6gVrqlYxJdcdIabURQ2Q/view?usp=sharing" target="_blank">
+                   <p>Portafolio 2012</p>
+           </a>
+           </div>
+          
+            <div class="grid-item">
+                <img src="https://drive.google.com/uc?export=view&id=1i72frc22ei6glntE1gVBv8LhZTdpwvmS" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="https://drive.google.com/uc?export=view&id=19KqDMsQmmbIntHHI3uaGPtcTfJ4gEibH" alt="">
+            </div>
+
+
+            <div class="grid-item card card-w-t card-w-l">
+                <img src="https://drive.google.com/uc?export=view&id=1MZhMQSjV2bXrIaC8uY87WHP2RPI4dqlC" alt="">
+              
+               <a href="https://drive.google.com/file/d/1PC-UA-ikpKVZL8W4h6TS7KkAB7TSTh0k/view?usp=sharing" target="_blank">
+                   <p>Portafolio 2020</p>
+           </a>
+           </div>
+          
+            
+          
+            <div class="grid-item card card-w-t card-w-l">
+                 <img src="https://manolecks.github.io/portafolio/card-girls-rosas/img/5.jpg" alt="">
+               
+                <a href="https://manolecks.github.io/portafolio/card-girls-rosas/" target="_blank">
+                    <p>Cards rosas</p>
+            </a>
+            </div>
+
+            <div class="grid-item">
+                <img src="https://manolecks.github.io/portafolio/banners-animados/img/bestday-12.jpg" alt="">
+            </div>
+
+            <div class="grid-item">
+                <img src="https://manolecks.github.io/portafolio/banners-animados/img/bestday-10.jpg" alt="">
+            </div>
+
+            <div class="grid-item">
+                <img src="https://manolecks.github.io/portafolio/banners-animados/img/bestday-16.jpg" alt="">
+            </div>
+        </div>
+   </section>
+
+   
+
+   
+   
+   
+   <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+<script>
+
+
+// selector string as first argument
+var colc = new Colcade( '.grid', {
+  columns: '.grid-col',
+  items: '.grid-item'
+});
+
+
+/*Esto es la edad*/
+let oldYear = document.getElementById('oldYear'); //Conseguimos donde colocar el texto
+let f = new Date();//La fecha actual
+let y = f.getFullYear();//Año acutal
+let old = 1985;// año de nacimineto 
+let yOld = y - old;//Restamos año actual con año de nacimiento
+oldYear.innerHTML = `${yOld} años`; // Colocamos el final de la  resta en la variable que necesitamos
+   
+</script>
+</body>
+</html>

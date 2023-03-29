@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --mian-bg-color: red;
+        }
+       *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        
+       }
+       .container{
+        display: flex;
+         /*display: inline-flex;*/
+         height: 30vh;
+         background: red;
+         flex-direction: row;
+         flex-wrap: nowrap /*nowrap wrap wrap-reverse*/;
+         /* es un shorthand de las anteriories
+         flex-flow: column wrap;*/
+         /*flex-direction: column;*/
+         /**/
+         justify-content: space-around;
+         align-items: center;
+       }
+       .items{
+        background: gray;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+        /*Shorhand de grow shrink basis
+         flex: 0 1 auto*/
+         order: 0;
+         align-self: center;
+       }
+       .disto,.items:nth-child(2){
+        flex-grow: 3 !important;
+        background: red;
+        order: 1;
+       }
+  
+    </style>
+</head>
+<body>
+    <!--
+        extra small  576px
+                     768px
+                     992px
+                     1200px
+                     1400px
+                     min-width
+
+
+    -->
+    <!--Flexbox es para uso interno y grid es para dar forma externamente
+        unidimensional filas y columnas
+
+         
+    -->
+
+    <h1>Formato CSS Flexbox</h1>
+
+    <section class="container">
+        <article class="items">hola camion
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eaque reprehenderit fuga iure molestias magni minima repellendus nemo, illum mollitia recusandae non voluptatem a eveniet culpa, laboriosam totam ab dicta!</p>
+        </article>
+        <article class="items disto">hola
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eaque reprehenderit fuga iure molestias magni minima repellendus nemo, illum mollitia recusandae non voluptatem a eveniet culpa, laboriosam totam ab dicta!nsjdjzxdsfresudhsabdushduhsduhsduhasudhsudhsihdioashdusghdygsdygsydgsaydg Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, recusandae iusto corrupti vero impedit aliquam ratione quaerat quidem? Veniam est sunt tenetur velit dicta nemo repudiandae doloribus id dolorem ad?</p>
+        </article>
+        <article class="items">hola
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eaque reprehenderit fuga iure molestias magni minima repellendus nemo, illum mollitia recusandae non voluptatem a eveniet culpa, laboriosam totam ab dicta!</p>
+        </article>
+    </section>
+    <section class="container">
+        <article class="items">hola</article>
+        <article class="items">hola</article>
+        <article class="items">hola</article>
+    </section>
+
+
+</body>
+</html>
